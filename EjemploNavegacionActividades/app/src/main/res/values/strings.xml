@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EjemploNavegacionActividades</string>
+    <string name="actividad_b">Ir a actividad B</string>
+    <string name="actividad_c">Ir a actividad C</string>
+    <string name="actividad_d">Ir a actividad D</string>
+</resources>

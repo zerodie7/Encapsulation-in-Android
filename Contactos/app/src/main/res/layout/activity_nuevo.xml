@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Nuevo">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AlertDialog.AppCompat.Light"
+            tools:ignore="MissingConstraints"/>
+
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp" app:srcCompat="@drawable/foto_01" android:id="@+id/ivFotoNuevo"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.441"/>
+    <TextView
+            android:text="@string/titulo_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEdad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/tvPeso" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etEmpresa" app:layout_constraintHorizontal_bias="0.51"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/tvPeso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:text="@string/cambiar_peso"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etEmpresa"/>
+    <TextView
+            android:text="@string/cambiar_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTelefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tvPeso"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etEmpresa"/>
+    <TextView
+            android:text="@string/cambiar_dirección"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvDireccion" android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintHorizontal_bias="0.498" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etPeso"/>
+    <TextView
+            android:text="@string/cambiar_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvEmail" android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDireccion"/>
+    <EditText
+            android:text=""
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoNuevo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="60dp"
+            android:hint="Nombre" android:inputType="textPersonName" android:singleLine="true"/>
+    <EditText
+            android:text=""
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etApellido"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoNuevo"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Apellido" android:inputType="textPersonName"
+            android:singleLine="true" app:layout_constraintStart_toEndOf="@+id/etNombre"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:text=""
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/etEmpresa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etApellido"
+            app:layout_constraintHorizontal_bias="0.49"
+            android:hint="Empresa" android:inputType="text" android:singleLine="true"/>
+    <EditText
+            android:text=""
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/etEdad"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:hint="34 años" android:inputType="number" android:singleLine="true"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvEdad" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/etPeso" app:layout_constraintHorizontal_bias="0.6"/>
+    <EditText
+            android:text=""
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPeso"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:hint="45 kg" android:inputType="numberDecimal" android:singleLine="true"
+            app:layout_constraintHorizontal_bias="0.491"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvPeso"/>
+    <EditText
+            android:text=""
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTelefono"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/tvTelefono"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:hint="55 11 54 38 22" android:inputType="phone" android:singleLine="true"
+            app:layout_constraintStart_toEndOf="@+id/etPeso" android:layout_marginStart="8dp"/>
+    <EditText
+            android:text=""
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/etDireccion" android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintHorizontal_bias="0.482"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvDireccion"
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp"
+            android:hint="Nezahualcoyotl 552" android:inputType="textPostalAddress" android:singleLine="true"/>
+    <EditText
+            android:text=""
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="8dp"
+            android:hint="laura@gmail.com" android:singleLine="true" android:inputType="textEmailAddress"/>
+
+
+</android.support.constraint.ConstraintLayout>

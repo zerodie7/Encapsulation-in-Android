@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Clima</string>
+    <string name="texto_grado">23°</string>
+    <string name="texto_ciudad">Ciudad de México</string>
+    <string name="texto_estatus">Soleado</string>
+    <string name="texto_bienvenida">
+        Bienvenido a la aplicacion del clima, para ver el clima de una ciudad seleccione
+        la opción de abajo.
+    </string>
+    <string name="texto_boton_méxico">Clima de la ciudad de México</string>
+    <string name="texto_boton_España">Clima de la ciudad de España</string>
+    <string name="texto_boton_Toronto">Clima de la ciudad de Toronto</string>
+    <string name="texto_boton_Okinawa">Clima de la ciudad de Okinawa</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First_Kotlin</string>
+
+    <string name="Bienvenida">
+        Bienvenidos a la primera aplicacion en Kotlin
+    </string>
+</resources>

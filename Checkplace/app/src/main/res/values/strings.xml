@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Checkplace</string>
+    <string name="login_foursquare">Login Foursquare</string>
+    <string name="app_categorias">Categorias</string>
+    <string name="app_favoritos">Favoritos</string>
+
+    <string name="app_perfil_nombre"> nombre</string>
+    <string name="app_perfil_tips"> tips</string>
+    <string name="app_perfil_photos"> fotos</string>
+    <string name="app_perfil_friends"> amigos</string>
+    <string name="app_perfil_checkins"> checkins</string>
+
+    <string name="app_template_pantalla_principal_category">Sin categoria </string>
+
+
+
+</resources>

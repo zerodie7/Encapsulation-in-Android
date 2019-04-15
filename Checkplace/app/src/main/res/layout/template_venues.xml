@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="158dp" app:srcCompat="@drawable/placeholder_venue"
+            android:id="@+id/ivFotoLugar" android:layout_weight="1" android:paddingLeft="4dp"
+            android:paddingRight="4dp" android:paddingTop="16dp"
+            android:scaleType="centerCrop" android:paddingBottom="4dp"/>
+    <TextView
+            android:text="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tvNombre"
+            android:layout_gravity="center_vertical" android:textAppearance="@style/AppTheme.TituloCel"
+            android:paddingBottom="4dp" android:paddingLeft="16dp" android:paddingRight="16dp"
+            android:paddingTop="4dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp" app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/ivFoto"
+                android:layout_marginBottom="4dp" android:layout_marginTop="4dp" android:layout_marginLeft="16dp"/>
+        <TextView
+                android:text="Categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvCategory" android:paddingBottom="4dp"
+                android:paddingEnd="16dp" android:paddingLeft="16dp" android:paddingTop="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp" app:srcCompat="@drawable/ic_terrain_black_24dp"
+                android:id="@+id/imageView" android:layout_weight="0" android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+        <TextView
+                android:text="Estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvState" android:layout_weight="1"
+                android:paddingBottom="4dp" android:paddingLeft="16dp" android:paddingRight="16dp"
+                android:paddingTop="4dp" android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+</LinearLayout>

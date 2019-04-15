@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EjemploRecyclerView</string>
+    <string name="desc"></string>
+
+    <string name="item_eliminar">Eliminar</string>
+
+</resources>

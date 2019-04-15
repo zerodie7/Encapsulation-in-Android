@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Actividades.Login" android:background="@drawable/placeholder_venue">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/btLogin"
+            android:text="@string/login_foursquare" style="@style/AppTheme.Button"
+            android:layout_marginTop="128dp" app:layout_constraintTop_toBottomOf="@+id/ivTitulo"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="76dp" app:srcCompat="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/ivTitulo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="112dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Diego Ulises @ Derechos Reservados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btLogin" app:layout_constraintVertical_bias="0.933"/>
+</android.support.constraint.ConstraintLayout>

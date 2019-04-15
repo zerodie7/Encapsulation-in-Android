@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SoilicitudHTTP</string>
+    <string name="texto_boton_validar_red">Validar   Red</string>
+    <string name="texto_boton_solicitud_HTTP">Solicitud HTTP</string>
+    <string name="texto_boton_volley">Solicitud HTTP Volley</string>
+    <string name="texto_boton_ok">Solicitud HTTP OkHTTP</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/titulo_resplado" android:id="@+id/btRespaldo" app:showAsAction="ifRoom"
+          android:icon="@drawable/ic_backup_black_24dp"/>
+</menu>

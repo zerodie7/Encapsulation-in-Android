@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="@color/colorPrimary">
+    <TextView
+            android:text="@string/texto_grado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="false"
+            android:layout_marginStart="160dp" android:id="@+id/tvGrados"
+            android:layout_marginTop="95dp"
+            android:layout_centerInParent="false" android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" android:textSize="50sp"
+            android:textColor="@color/colorGrado" android:textAlignment="center"/>
+    <TextView
+            android:text="@string/texto_ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="false"
+            android:layout_marginStart="176dp" android:layout_alignParentTop="true" android:id="@+id/tvCiudad"
+            android:layout_marginTop="207dp" android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/tvGrados" android:layout_centerHorizontal="true" android:textSize="28sp"
+            android:textColor="@color/colorCiudad" android:textAlignment="center"/>
+    <TextView
+            android:text="@string/texto_estatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="false"
+            android:layout_marginStart="176dp" android:layout_alignParentTop="true" android:id="@+id/tvEstatus"
+            android:layout_marginTop="272dp" android:layout_below="@+id/tvCiudad"
+            android:layout_centerHorizontal="true" android:textSize="24sp"
+            android:textColor="@color/colorEstado" android:textAlignment="center"/>
+</RelativeLayout>
